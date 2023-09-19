@@ -1,19 +1,17 @@
 {
-  "name": "vue-phaser-vite",
+  "name": "phaser exploration 001",
   "version": "1.1.0",
-  "author": "Markus Appel <markospoparkos@gmail.com>",
-  "description": "Template for working with Phaser in a Vue project based on Vite",
+  "author": "Daniel Ahn <et3rnal.d@gmail.com>",
+  "description": "Putting a Vue 3 + Phaser 3 + Vite 2 project together on top of boilerplate",
   "keywords": [
     "vue",
     "phaser",
-    "vite",
-    "boilerplate",
-    "template"
+    "vite"
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Sun0fABeach/vue-phaser-vite.git"
+    "url": ""
   },
   "scripts": {
     "dev": "vite",
