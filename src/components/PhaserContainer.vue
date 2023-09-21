@@ -8,6 +8,11 @@ const game = await import('@/game/game')
 
 onMounted(() => {
   gameInstance = game.launch(containerId)
+
+  // Listen for events from Phaser
+  gameInstance.events.on('my-event', (payload: any) => {
+    console.log('Received event from Phaser: ', payload.data)
+  })
 })
 
 onUnmounted(() => {

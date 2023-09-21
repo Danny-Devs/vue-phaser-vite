@@ -1,5 +1,5 @@
 import { Scene } from 'phaser'
-
+import PlayScene2 from './PlayScene2'
 export default class PlayScene extends Scene {
   constructor() {
     super({ key: 'PlayScene' })
@@ -26,6 +26,12 @@ export default class PlayScene extends Scene {
     this.sound.add('thud')
     this.physics.world.on('worldbounds', () => {
       this.sound.play('thud', { volume: 0.01 })
+    })
+
+    const button = this.add.image(100, 100, 'bomb').setInteractive()
+    button.on('pointerdown', () => {
+      // load the next scene
+      this.scene.start('PlayScene2')
     })
   }
 
