@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import PhaserContainer from '@/components/PhaserContainer.vue'
+
+// test
 </script>
 
 <template>
