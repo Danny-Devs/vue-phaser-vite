@@ -1,8 +1,11 @@
 <script setup lang="ts">
-  const openExperiment001 = () => {
-    console.log('openExperiment001')
-  }
+import { useRouter } from 'vue-router'
 
+const router = useRouter()
+const openExperiment001 = () => {
+  console.log('openExperiment001')
+  router.push({ name: 'Experiment001' })
+}
 </script>
 
 <template>
@@ -14,12 +17,8 @@
 
     <div class="mt-6">
       <button @click="openExperiment001" class="btn btn-primary">Experiment 001</button>
-
     </div>
   </div>
-
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
